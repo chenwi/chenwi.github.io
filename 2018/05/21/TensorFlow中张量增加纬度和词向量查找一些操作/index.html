@@ -87,12 +87,12 @@
 <meta property="og:site_name" content="Mr番茄蛋的博客">
 <meta property="og:description" content="TensorFlow中embedding_lookup操作代码：12345678910111213141516171819import tensorflow as tfa=tf.Variable(tf.random_normal([2,4]),tf.float32)b=tf.Variable(tf.random_normal([2,3]),tf.float32)c=tf.Variable(tf.r">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://chenwi.github.io/2018/05/21/TensorFlow中张量增加纬度和词向量查找一些操作/1526910118207.png">
-<meta property="og:updated_time" content="2018-05-21T13:43:25.718Z">
+<meta property="og:image" content="https://img-blog.csdn.net/20180415140747571?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjAzNDI1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-05-21T13:52:16.352Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow中张量增加纬度和词向量查找一些操作">
 <meta name="twitter:description" content="TensorFlow中embedding_lookup操作代码：12345678910111213141516171819import tensorflow as tfa=tf.Variable(tf.random_normal([2,4]),tf.float32)b=tf.Variable(tf.random_normal([2,3]),tf.float32)c=tf.Variable(tf.r">
-<meta name="twitter:image" content="https://chenwi.github.io/2018/05/21/TensorFlow中张量增加纬度和词向量查找一些操作/1526910118207.png">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180415140747571?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjAzNDI1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
 
@@ -430,7 +430,7 @@
 
       
         <h2 id="TensorFlow中embedding-lookup操作"><a href="#TensorFlow中embedding-lookup操作" class="headerlink" title="TensorFlow中embedding_lookup操作"></a>TensorFlow中embedding_lookup操作</h2><p>代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line">a=tf.Variable(tf.random_normal([<span class="number">2</span>,<span class="number">4</span>]),tf.float32)</span><br><span class="line">b=tf.Variable(tf.random_normal([<span class="number">2</span>,<span class="number">3</span>]),tf.float32)</span><br><span class="line">c=tf.Variable(tf.random_normal([<span class="number">2</span>,<span class="number">3</span>]),tf.float32)</span><br><span class="line"></span><br><span class="line">em=tf.nn.embedding_lookup(a,[[<span class="number">0</span>,<span class="number">1</span>],[<span class="number">0</span>,<span class="number">1</span>]])</span><br><span class="line">p1=tf.nn.embedding_lookup(b,[[<span class="number">0</span>,<span class="number">1</span>],[<span class="number">0</span>,<span class="number">1</span>]])</span><br><span class="line">d=tf.expand_dims(tf.concat([em,p1],<span class="number">-1</span>),<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    sess.run(tf.global_variables_initializer())</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'a\n'</span>,sess.run(a))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">'em\n'</span>,sess.run(em))</span><br><span class="line">    print(<span class="string">'p1\n'</span>, sess.run(p1))</span><br><span class="line">    print(<span class="string">'d\n'</span>,sess.run(d))</span><br></pre></td></tr></table></figure></p>
-<p><img src="./1526910118207.png" alt="Alt text"></p>
+<p><img src="https://img-blog.csdn.net/20180415140747571?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjAzNDI1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="Alt text"></p>
 
       
     </div>
