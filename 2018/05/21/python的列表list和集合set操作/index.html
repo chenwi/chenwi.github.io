@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="pandas,pandas学习,数据框操作," />
+  <meta name="keywords" content="list,set," />
 
 
 
@@ -79,30 +79,21 @@
 
 
 
-<meta name="description" content="数据变换操作导入文件123import numpy as npimport pandas as pdodata = pd.read_csv(&amp;apos;example.csv&amp;apos;) 这三行代码就可以实现csv文件的导入，注意文件的路径 删除行1Data1 = data.drop([16,17]) drop()方法 如果不设置参数inplace=True，则只能在生成的新数据块中实现删除效果">
-<meta name="keywords" content="pandas,pandas学习,数据框操作">
+<meta name="description" content="以下是一些python的list和set的基本操作1.list的一些操作12345678910111213list = [1, 2, 3]list.append(5)print(list)list.extend([7, 8])  # extend是将可迭代对象的元素依次加入列表print(list)list.append([7, 8])  # append是把传入的参数当成一个元素加入列表prin">
+<meta name="keywords" content="list,set">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python数据处理——Pandas模块使用（二）">
-<meta property="og:url" content="https://chenwi.github.io/2018/05/21/Python数据处理——Pandas模块使用（二）/index.html">
+<meta property="og:title" content="python的列表list和集合set操作">
+<meta property="og:url" content="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/index.html">
 <meta property="og:site_name" content="Mr番茄蛋的博客">
-<meta property="og:description" content="数据变换操作导入文件123import numpy as npimport pandas as pdodata = pd.read_csv(&amp;apos;example.csv&amp;apos;) 这三行代码就可以实现csv文件的导入，注意文件的路径 删除行1Data1 = data.drop([16,17]) drop()方法 如果不设置参数inplace=True，则只能在生成的新数据块中实现删除效果">
+<meta property="og:description" content="以下是一些python的list和set的基本操作1.list的一些操作12345678910111213list = [1, 2, 3]list.append(5)print(list)list.extend([7, 8])  # extend是将可迭代对象的元素依次加入列表print(list)list.append([7, 8])  # append是把传入的参数当成一个元素加入列表prin">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913192849769">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913194106249">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913194820155">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913195018721">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913195355535">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913195644364">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913200428629">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913201130231">
-<meta property="og:image" content="https://img-blog.csdn.net/20160913201130231">
-<meta property="og:image" content="https://img-blog.csdn.net/20160914090542084">
-<meta property="og:image" content="https://img-blog.csdn.net/20160914091035307">
-<meta property="og:updated_time" content="2018-05-21T05:10:35.114Z">
+<meta property="og:image" content="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/1526910408350.png">
+<meta property="og:image" content="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/1526910433830.png">
+<meta property="og:updated_time" content="2018-05-21T13:47:55.796Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python数据处理——Pandas模块使用（二）">
-<meta name="twitter:description" content="数据变换操作导入文件123import numpy as npimport pandas as pdodata = pd.read_csv(&amp;apos;example.csv&amp;apos;) 这三行代码就可以实现csv文件的导入，注意文件的路径 删除行1Data1 = data.drop([16,17]) drop()方法 如果不设置参数inplace=True，则只能在生成的新数据块中实现删除效果">
-<meta name="twitter:image" content="https://img-blog.csdn.net/20160913192849769">
+<meta name="twitter:title" content="python的列表list和集合set操作">
+<meta name="twitter:description" content="以下是一些python的list和set的基本操作1.list的一些操作12345678910111213list = [1, 2, 3]list.append(5)print(list)list.extend([7, 8])  # extend是将可迭代对象的元素依次加入列表print(list)list.append([7, 8])  # append是把传入的参数当成一个元素加入列表prin">
+<meta name="twitter:image" content="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/1526910408350.png">
 
 
 
@@ -132,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://chenwi.github.io/2018/05/21/Python数据处理——Pandas模块使用（二）/"/>
+  <link rel="canonical" href="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/"/>
 
 
 
 
 
-  <title>Python数据处理——Pandas模块使用（二） | Mr番茄蛋的博客</title>
+  <title>python的列表list和集合set操作 | Mr番茄蛋的博客</title>
   
 
 
@@ -309,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chenwi.github.io/2018/05/21/Python数据处理——Pandas模块使用（二）/">
+    <link itemprop="mainEntityOfPage" href="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chenwi">
@@ -326,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python数据处理——Pandas模块使用（二）</h1>
+          <h1 class="post-title" itemprop="name headline">python的列表list和集合set操作</h1>
         
 
         <div class="post-meta">
@@ -338,7 +329,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-21T12:31:33+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-21T21:45:08+08:00">
                 2018-05-21
               </time>
             
@@ -380,8 +371,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2018/05/21/Python数据处理——Pandas模块使用（二）/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/21/Python数据处理——Pandas模块使用（二）/" itemprop="commentsCount"></span>
+                <a href="/2018/05/21/python的列表list和集合set操作/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/21/python的列表list和集合set操作/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -389,7 +380,7 @@
 
           
           
-             <span id="/2018/05/21/Python数据处理——Pandas模块使用（二）/" class="leancloud_visitors" data-flag-title="Python数据处理——Pandas模块使用（二）">
+             <span id="/2018/05/21/python的列表list和集合set操作/" class="leancloud_visitors" data-flag-title="python的列表list和集合set操作">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -414,7 +405,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,198
+                  320
                 </span>
               
 
@@ -439,69 +430,11 @@
       
 
       
-        <h2 id="数据变换操作"><a href="#数据变换操作" class="headerlink" title="数据变换操作"></a>数据变换操作</h2><p><strong>导入文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line">odata = pd.read_csv(&apos;example.csv&apos;)</span><br></pre></td></tr></table></figure></p>
-<p>这三行代码就可以实现csv文件的导入，注意文件的路径</p>
-<p><strong>删除行</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Data1 = data.drop([16,17])</span><br></pre></td></tr></table></figure></p>
-<p><strong>drop()方法</strong></p>
-<p>如果不设置参数inplace=True，则只能在生成的新数据块中实现删除效果，而不能删除原有数据块的相应行。也就是inplace属性可以对原来的数据进行删除操作Inplace = True用法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">odata.drop(odata.index[[16,17]],inplace=True)</span><br></pre></td></tr></table></figure>
-<p>我们要注意到用与不用inplace的区别，不用inplace的时候，我们使用另外一个变量Data1来暂时保存处理后的数据，而使用inplace的时候，我们直接调用一个函数对原来的数据进行操作。值得注意的是，inplace属性并不会修改原来的文件，所以是安全的。也就是虽然直接对原来数据删除，但并不会删除到文件，只会在内存里操作原来变量。<br>删除列del data[‘date’]<br>代码如上所示，直接删除，注意这个del的方括号里只能够有一个参数。一次只能删除一列。</p>
-<p><strong>pop()方法</strong></p>
-<p>pop方法可以将所选列从原数据块中弹出，原数据块不再保留该列，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Data1=data.pop(‘latitude’)</span><br></pre></td></tr></table></figure>
-<p>pop方法将单独的数据取出来，在我们想要对某一块数据很感兴趣的时候非常实用。</p>
-<p><strong>split()的使用</strong></p>
-<p>简单的Python的字符串分割我们在数据预处理的时候很多时候要对一串带有各种符号的数据进行处理。但是实际运行时我们要将它们分开处理，所以需要用到python带的split函数来处理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">str = (&apos;www.google.com&apos;)</span><br><span class="line">print (str)</span><br><span class="line">str_split = str.split(&apos;.&apos;)</span><br><span class="line">print (str_split)</span><br><span class="line"></span><br><span class="line"># 这样运行出来的结果是</span><br><span class="line"># www.google.com</span><br><span class="line"># [‘www’,‘google’,‘com’]</span><br></pre></td></tr></table></figure>
-<p>如果我们想要设置分割的个数，就在split里面添加参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str_split = str.split(‘.’,1)</span><br><span class="line"># 这样得出的结果是：</span><br><span class="line"># www.google.com</span><br><span class="line"># [‘www’,’google.com’]</span><br></pre></td></tr></table></figure>
-<p>也就是只分割了第一个字符，第二个就没有分割了。</p>
-<h2 id="数据框合并concat-操作"><a href="#数据框合并concat-操作" class="headerlink" title="数据框合并concat()操作"></a>数据框合并concat()操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">concat函数是在pandas底下的方法，可以将数据根据不同的轴作简单的融合</span><br><span class="line">pd.concat(objs, axis=0, join=&apos;outer&apos;, join_axes=None, ignore_index=False,</span><br><span class="line">       keys=None, levels=None, names=None, verify_integrity=False)</span><br></pre></td></tr></table></figure>
-<p>参数说明<br>objs: series，dataframe或者是panel构成的序列lsit<br>axis： 需要合并链接的轴，0是行，1是列<br>join：连接的方式 inner，或者outer</p>
-<p><strong>相同字段的表首尾相接</strong></p>
-<p><img src="https://img-blog.csdn.net/20160913192849769" alt="这里写图片描述"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 现将表构成list，然后在作为concat的输入</span><br><span class="line">In [4]: frames = [df1, df2, df3]</span><br><span class="line"></span><br><span class="line">In [5]: result = pd.concat(frames)</span><br></pre></td></tr></table></figure>
-<p>要在相接的时候在加上一个层次的key来识别数据源自于哪张表，可以增加key参数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = pd.concat(frames, keys=[&apos;x&apos;, &apos;y&apos;, &apos;z&apos;])</span><br></pre></td></tr></table></figure>
-<p>效果如下<br><img src="https://img-blog.csdn.net/20160913194106249" alt="这里写图片描述"></p>
-<p><strong>横向表拼接（行对齐）</strong></p>
-<p>当axis = 1的时候，concat就是行对齐，然后将不同列名称的两张表合并</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = pd.concat([df1, df4], axis=1)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913194820155" alt="这里写图片描述"></p>
-<p><strong>join</strong></p>
-<p>加上join参数的属性，如果为’inner’得到的是两表的交集，如果是outer，得到的是两表的并集。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = pd.concat([df1, df4], axis=1, join=&apos;inner&apos;)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913195018721" alt="这里写图片描述"></p>
-<p> <strong>join_axes</strong></p>
-<p>如果有join_axes的参数传入，可以指定根据那个轴来对齐数据<br>例如根据df1表对齐数据，就会保留指定的df1表的轴，然后将df4的表与之拼接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = pd.concat([df1, df4], axis=1, join_axes=[df1.index])</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913195355535" alt="这里写图片描述"></p>
-<p><strong>append</strong></p>
-<p>append是series和dataframe的方法，使用它就是默认沿着列进行凭借（axis = 0，列对齐）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = df1.append(df2)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913195644364" alt="这里写图片描述"></p>
-<p><strong>无视index的concat</strong></p>
-<p>如果两个表的index都没有实际含义，使用ignore_index参数，置true，合并的两个表就睡根据列字段对齐，然后合并。最后再重新整理一个新的index。<br><img src="https://img-blog.csdn.net/20160913200428629" alt="这里写图片描述"></p>
-<p><strong>合并的同时增加区分数据组的键</strong></p>
-<p>前面提到的keys参数可以用来给合并后的表增加key来区分不同的表数据来源</p>
-<ol>
-<li>直接用key参数实现</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result = pd.concat(frames, keys=[&apos;x&apos;, &apos;y&apos;, &apos;z&apos;])</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913201130231" alt="这里写图片描述"></p>
-<ol start="2">
-<li>传入字典来增加分组键</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pieces = &#123;&apos;x&apos;: df1, &apos;y&apos;: df2, &apos;z&apos;: df3&#125;</span><br><span class="line">result = pd.concat(pieces)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160913201130231" alt="这里写图片描述"></p>
-<p><strong>在dataframe中加入新的行</strong></p>
-<p>append方法可以将 series 和 字典就够的数据作为dataframe的新一行插入。 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s2 = pd.Series([&apos;X0&apos;, &apos;X1&apos;, &apos;X2&apos;, &apos;X3&apos;], index=[&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;])</span><br><span class="line">result = df1.append(s2, ignore_index=True)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160914090542084" alt="这里写图片描述"></p>
-<p><strong>表格列字段不同的表合并</strong></p>
-<p>如果遇到两张表的列字段本来就不一样，但又想将两个表合并，其中无效的值用nan来表示。那么可以使用ignore_index来实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dicts = [&#123;&apos;A&apos;: 1, &apos;B&apos;: 2, &apos;C&apos;: 3, &apos;X&apos;: 4&#125;,&#123;&apos;A&apos;: 5, &apos;B&apos;: 6, &apos;C&apos;: 7, &apos;Y&apos;: 8&#125;]</span><br><span class="line">result = df1.append(dicts, ignore_index=True)</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdn.net/20160914091035307" alt="这里写代码片"></p>
+        <h2 id="以下是一些python的list和set的基本操作"><a href="#以下是一些python的list和set的基本操作" class="headerlink" title="以下是一些python的list和set的基本操作"></a>以下是一些python的list和set的基本操作</h2><h3 id="1-list的一些操作"><a href="#1-list的一些操作" class="headerlink" title="1.list的一些操作"></a>1.list的一些操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">list = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">list.append(<span class="number">5</span>)</span><br><span class="line">print(list)</span><br><span class="line"></span><br><span class="line">list.extend([<span class="number">7</span>, <span class="number">8</span>])  <span class="comment"># extend是将可迭代对象的元素依次加入列表</span></span><br><span class="line">print(list)</span><br><span class="line"></span><br><span class="line">list.append([<span class="number">7</span>, <span class="number">8</span>])  <span class="comment"># append是把传入的参数当成一个元素加入列表</span></span><br><span class="line">print(list)</span><br><span class="line"></span><br><span class="line">list.reverse()  <span class="comment"># 元素翻转，注意不能将这个操作赋给一个变量，此操作是对list本身操作，即list自身发生变化</span></span><br><span class="line"><span class="comment"># l=list.reverse() l为空，没有得到list翻转后的值</span></span><br><span class="line">print(list)</span><br></pre></td></tr></table></figure>
+<p>输出结果：<br><img src="./1526910408350.png" alt="Alt text"></p>
+<h3 id="2-set基本操作"><a href="#2-set基本操作" class="headerlink" title="2.set基本操作"></a>2.set基本操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">list = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">s = set(list)</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">s.add(<span class="number">4</span>)</span><br><span class="line"><span class="comment"># s.add([2,3]) 错误，add函数只能增加与原集合相同类型的元素</span></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">s.update([<span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line"><span class="comment"># s.update(5) 错误，update更新集合时传入的是一个可迭代对象</span></span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">c = s.copy()  <span class="comment"># 用于集合复制,创建新集合</span></span><br><span class="line">cc = s</span><br><span class="line">print(c)</span><br><span class="line">print(cc)</span><br><span class="line"><span class="comment"># 类似于list中copy方法</span></span><br><span class="line">print(cc <span class="keyword">is</span> c)</span><br><span class="line"></span><br><span class="line">ss = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">9</span>&#125;</span><br><span class="line">minus = s.difference(ss)  <span class="comment"># 求差集</span></span><br><span class="line">print(minus)</span><br><span class="line"></span><br><span class="line">union = s.union(ss)  <span class="comment"># 求并集</span></span><br><span class="line">print(union)</span><br><span class="line"></span><br><span class="line">intersection = s.intersection(ss)  <span class="comment"># 求交集</span></span><br><span class="line">print(intersection)</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<p><img src="./1526910433830.png" alt="Alt text"></p>
 
       
     </div>
@@ -551,7 +484,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://chenwi.github.io/2018/05/21/Python数据处理——Pandas模块使用（二）/" title="Python数据处理——Pandas模块使用（二）">https://chenwi.github.io/2018/05/21/Python数据处理——Pandas模块使用（二）/</a>
+    <a href="https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/" title="python的列表list和集合set操作">https://chenwi.github.io/2018/05/21/python的列表list和集合set操作/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -566,11 +499,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/pandas/" rel="tag"># pandas</a>
+            <a href="/tags/list/" rel="tag"># list</a>
           
-            <a href="/tags/pandas学习/" rel="tag"># pandas学习</a>
-          
-            <a href="/tags/数据框操作/" rel="tag"># 数据框操作</a>
+            <a href="/tags/set/" rel="tag"># set</a>
           
         </div>
       
@@ -583,8 +514,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/21/已解决：用anaconda安装最新的TensorFlow版本/" rel="next" title="已解决：用anaconda安装最新的TensorFlow版本">
-                <i class="fa fa-chevron-left"></i> 已解决：用anaconda安装最新的TensorFlow版本
+              <a href="/2018/05/21/TensorFlow中张量增加纬度和词向量查找一些操作/" rel="next" title="TensorFlow中张量增加纬度和词向量查找一些操作">
+                <i class="fa fa-chevron-left"></i> TensorFlow中张量增加纬度和词向量查找一些操作
               </a>
             
           </div>
@@ -592,10 +523,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/21/python中re模块使用，正则表达式/" rel="prev" title="python中re模块使用，正则表达式">
-                python中re模块使用，正则表达式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -817,7 +744,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据变换操作"><span class="nav-number">1.</span> <span class="nav-text">数据变换操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据框合并concat-操作"><span class="nav-number">2.</span> <span class="nav-text">数据框合并concat()操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#以下是一些python的list和set的基本操作"><span class="nav-number">1.</span> <span class="nav-text">以下是一些python的list和set的基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-list的一些操作"><span class="nav-number">1.1.</span> <span class="nav-text">1.list的一些操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-set基本操作"><span class="nav-number">1.2.</span> <span class="nav-text">2.set基本操作</span></a></li></ol></li></ol></div>
             
 
           </div>
